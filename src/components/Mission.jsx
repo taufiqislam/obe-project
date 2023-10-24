@@ -6,8 +6,8 @@ import {faTrash} from '@fortawesome/free-solid-svg-icons'
 export const Mission = ({description, index, deleteMission, editMission}) => {
   return (
     <div className='Mission'>
-        <p>M{index+1}</p>
-        <p>{description.description}</p>
+        <tr>{index+1}</tr>
+        <tr>{description.description}</tr>
         <div>
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => editMission(description.id)}/>
             <FontAwesomeIcon icon={faTrash} onClick={() => deleteMission(description.id)}/>

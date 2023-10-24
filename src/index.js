@@ -8,6 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { VisionPage } from './pages/VisionPage';
+import { PeoPage } from './pages/PeoPage';
+import { PloPage } from './pages/PloPage';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
   {
     path: "vision",
     element: <VisionPage/>,
+  },
+  {
+    path: "peo",
+    element: <PeoPage/>,
+  },
+  {
+    path: "plo",
+    element: <PloPage/>,
   },
 ]);
 

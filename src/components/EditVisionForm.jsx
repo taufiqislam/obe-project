@@ -11,8 +11,8 @@ export const EditVisionForm = ({editVision, description}) => {
 
   return (
     <form className='VisionForm' onSubmit={handleSubmit}>
-        <input type="text" className='vision-input' placeholder='Update Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>
-        <button type='submit' className='vision-btn'>Update description</button>
+        <input type="text" className='form-input' placeholder='Update Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>
+        <button type='submit' className='form-btn'>Update description</button>
     </form>
   )
 }

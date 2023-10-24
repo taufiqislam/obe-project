@@ -11,8 +11,8 @@ export const MissionForm = ({addMission}) => {
   return (
     <form className='MissionForm' onSubmit={handleSubmit}>
        <label htmlFor=""></label>
-       <input type="text" className='mission-input' placeholder='Enter Mission' value={value} onChange={(e) => setValue(e.target.value)} required/>
-       <button type='submit' className='mission-btn'>Add Mission</button>
+       <input type="text" className='form-input' placeholder='Enter Mission' value={value} onChange={(e) => setValue(e.target.value)} required/>
+       <button type='submit' className='form-btn'>Add Mission</button>
     </form>
   )
 }

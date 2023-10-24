@@ -10,6 +10,8 @@ export const Sidebar = () => {
         <ul className='Sidebar-menu'>
             <li><Link to='/'>Mission</Link></li>
             <li><Link to='/vision'>Vision</Link></li>
+            <li><Link to='/peo'>PEO</Link></li>
+            <li><Link to='/plo'>PLO</Link></li>
         </ul>
     </div>
   )
