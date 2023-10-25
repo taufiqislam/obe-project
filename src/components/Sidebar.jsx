@@ -12,6 +12,7 @@ export const Sidebar = () => {
             <li><Link to='/vision'>Vision</Link></li>
             <li><Link to='/peo'>PEO</Link></li>
             <li><Link to='/plo'>PLO</Link></li>
+            <li><Link to='/ilo'>ILO</Link></li>
         </ul>
     </div>
   )

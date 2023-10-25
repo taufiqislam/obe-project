@@ -36,14 +36,14 @@ table {
   color: #fff;
 }
 
-.MissionWrapper,.VisionWrapper,.PeoWrapper,.PloWrapper {
+.MissionWrapper,.VisionWrapper,.PeoWrapper,.PloWrapper,.IloWrapper {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
 }
 
-.MissionForm,.VisionForm,.PeoForm,.PloForm {
+.MissionForm,.VisionForm,.PeoForm,.PloForm,.IloForm {
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -71,7 +71,7 @@ table {
   cursor: pointer;
 }
 
-.Mission,.Vision,.Peo,.Plo {
+.Mission,.Vision,.Peo,.Plo,.Ilo {
   display: flex;
   justify-content: space-between;
   align-items: center;

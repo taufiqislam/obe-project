@@ -10,6 +10,7 @@ import {
 import { VisionPage } from './pages/VisionPage';
 import { PeoPage } from './pages/PeoPage';
 import { PloPage } from './pages/PloPage';
+import { IloPage } from './pages/IloPage';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "plo",
     element: <PloPage/>,
+  },
+  {
+    path: "ilo",
+    element: <IloPage/>,
   },
 ]);
 
