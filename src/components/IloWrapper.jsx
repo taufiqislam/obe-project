@@ -26,7 +26,7 @@ export const IloWrapper = () => {
     }
     
   return (
-    <div className='IloWrapper'>
+    <div>
         
         <IloForm addIlo={addIlo}/>
         {ilos.map((ilo, index) => (

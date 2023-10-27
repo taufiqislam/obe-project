@@ -10,9 +10,12 @@ export const VisionForm = ({addVision}) => {
     }
   return (
     <form className='VisionForm' onSubmit={handleSubmit}>
-       <label htmlFor=""></label>
-       <input type="text" className='form-input' placeholder='Enter Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>
-       <button type='submit' className='form-btn'>Add Vision</button>
+      <div className='form-group'>
+        <label htmlFor="">Vision:</label>
+        <input type="text" className='form-input form-control' placeholder='Enter Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>
+        <button type='submit' className='form-btn btn'>Add Vision</button>
+      </div>
+       
     </form>
   )
 }

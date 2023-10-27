@@ -10,9 +10,12 @@ export const PloForm = ({addPlo}) => {
     }
   return (
     <form className='PloForm' onSubmit={handleSubmit}>
-       <label htmlFor=""></label>
-       <input type="text" className='form-input' placeholder='Enter Plo' value={value} onChange={(e) => setValue(e.target.value)} required/>
-       <button type='submit' className='form-btn'>Add Plo</button>
+      <div className='form-group'>
+        <label htmlFor="">PLO:</label>
+        <input type="text" className='form-input form-control' placeholder='Enter Plo' value={value} onChange={(e) => setValue(e.target.value)} required/>
+        <button type='submit' className='form-btn btn'>Add Plo</button>
+      </div>
+       
     </form>
   )
 }

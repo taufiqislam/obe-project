@@ -11,11 +11,20 @@ import { VisionPage } from './pages/VisionPage';
 import { PeoPage } from './pages/PeoPage';
 import { PloPage } from './pages/PloPage';
 import { IloPage } from './pages/IloPage';
+import { CourseInfoPage } from './pages/CourseInfoPage';
+import { MissionPage } from './pages/MissionPage';
+import { PeoMapMissionPage } from './pages/PeoMapMissionPage';
+import { PloMapPeoPage } from './pages/PloMapPeoPage';
+import { CloMapPloPage } from './pages/CloMapPloPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: "mission",
+    element: <MissionPage/>,
   },
   {
     path: "vision",
@@ -32,6 +41,22 @@ const router = createBrowserRouter([
   {
     path: "ilo",
     element: <IloPage/>,
+  },
+  {
+    path: "courseinfo",
+    element: <CourseInfoPage/>,
+  },
+  {
+    path: "peomapmission",
+    element: <PeoMapMissionPage/>,
+  },
+  {
+    path: "plomappeo",
+    element: <PloMapPeoPage/>,
+  },
+  {
+    path: "clomapplo",
+    element: <CloMapPloPage/>,
   },
 ]);
 

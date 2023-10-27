@@ -7,12 +7,22 @@ export const IloPage = () => {
     <div>
         <Sidebar/>
         <h1>Ilo</h1>
-        <h1>Knowledge</h1>
-        <IloWrapper/>
-        <h1>Skills</h1>
-        <IloWrapper/>
-        <h1>Attitude</h1>
-        <IloWrapper/>
+        <div className='IloWrapper'>
+          
+          <h1>Knowledge</h1>
+          <IloWrapper/>
+        </div>
+        <div className='IloWrapper'>
+          <h1>Skills</h1>
+          <IloWrapper/>
+        </div>
+        <div className='IloWrapper'>
+          <h1>Attitude</h1>
+          <IloWrapper/>
+        </div>
+        
+        
+        
     </div>
   )
 }

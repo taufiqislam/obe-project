@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-  color: #fff;
+  color: black;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background: #8758ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+p {
+  margin: 0;
 }
 
-.App {
-  text-align: center;
+body {
+  /* background: #1A1A40; */
+  background-color: #deeaee;
 }
+
+/* .App {
+  text-align: center;
+} */
 
 h1 {
   
@@ -25,7 +27,11 @@ h1 {
   font-size: 1.75rem;
 }
 
-table {
+.sidenavbar {
+  background-color: #92a8d1;
+}
+
+/* table {
   outline: none;
   background: none;
   border: 1px solid #8758ff;
@@ -34,34 +40,37 @@ table {
   margin-bottom: 2rem;
   width: 100%;
   color: #fff;
+} */
+
+span:hover {
+  color: white;
 }
 
-.MissionWrapper,.VisionWrapper,.PeoWrapper,.PloWrapper,.IloWrapper {
-  background: #1A1A40;
-  margin-top: 5rem;
+
+.MissionWrapper,.VisionWrapper,.PeoWrapper,.PloWrapper,.IloWrapper,.CourseInfoWrapper {
+  background: #deeaee;
   padding: 2rem;
   border-radius: 5px;
 }
 
-.MissionForm,.VisionForm,.PeoForm,.PloForm,.IloForm {
+.MissionForm,.VisionForm,.PeoForm,.PloForm,.IloForm,.CourseInfoForm {
   width: 100%;
   margin-bottom: 1rem;
 }
 
 .form-input {
   outline: none;
-  background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid;
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 2rem;
-  width: 300px;
-  color: #fff;
+  display: block;
 }
 
 .form-input::placeholder {
-  color: #ffffff4d;
+  color: #4c49494d;
 }
+
 
 .form-btn {
   background: #8758ff;

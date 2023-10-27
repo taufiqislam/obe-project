@@ -11,8 +11,11 @@ export const EditPeoForm = ({editPeo, description}) => {
 
   return (
     <form className='PeoForm' onSubmit={handleSubmit}>
-        <input type="text" className='form-input' placeholder='Update Peo' value={value} onChange={(e) => setValue(e.target.value)} required/>
-        <button type='submit' className='form-btn'>Update description</button>
+      <div className='form-group'>
+        <input type="text" className='form-input form-control' placeholder='Update Peo' value={value} onChange={(e) => setValue(e.target.value)} required/>
+        <button type='submit' className='form-btn btn'>Update</button>
+      </div>
+        
     </form>
   )
 }
