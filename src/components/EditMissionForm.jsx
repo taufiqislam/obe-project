@@ -10,12 +10,19 @@ export const EditMissionForm = ({editMission, description}) => {
     }
 
   return (
-    <form className='MissionForm' onSubmit={handleSubmit}>
-      <div className='form-group'>
-        <input type="text" className='form-input form-control' placeholder='Update Mission' value={value} onChange={(e) => setValue(e.target.value)} required/>
-        <button type='submit' className='form-btn btn'>Update</button>
-      </div>
+    <>
+        <tr>
+          <td colSpan={3}>
+          <form className='MissionForm' onSubmit={handleSubmit}>
+            <div className='form-group'>
+              <input type="text" className='form-input form-control' placeholder='Update Mission' value={value} onChange={(e) => setValue(e.target.value)} required/>
+              <button type='submit' className='form-btn btn'>Update</button>
+            </div>
+          </form>
+          </td>
+        </tr>
         
-    </form>
+    </>
+    
   )
 }

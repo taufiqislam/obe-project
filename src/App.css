@@ -47,7 +47,7 @@ span:hover {
 }
 
 
-.MissionWrapper,.VisionWrapper,.PeoWrapper,.PloWrapper,.IloWrapper,.CourseInfoWrapper {
+.Wrapper {
   background: #deeaee;
   padding: 2rem;
   border-radius: 5px;

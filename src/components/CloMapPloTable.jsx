@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CloMapPloTable = () => {
   return (
-    <div>
-        <h1 className='text-center'>CLO-PLO Correlation Matrix</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>CLO-PLO Correlation Matrix</h1>
         <table className='table table-bordered table-light text-center'>
             <thead>
                 <tr>

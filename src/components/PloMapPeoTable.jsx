@@ -2,8 +2,8 @@ import React from 'react'
 
 export const PloMapPeoTable = () => {
   return (
-    <div>
-        <h1 className='text-center'>Mapping of PLO and PEO</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>Mapping of PLO and PEO</h1>
         <table className='table table-bordered table-light text-center'>
             <thead>
                 <tr>

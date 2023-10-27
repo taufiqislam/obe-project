@@ -26,18 +26,30 @@ export const VisionWrapper = () => {
     }
     
   return (
-    <div className='VisionWrapper'>
-        <h1>Vision</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>Vision</h1>
         <VisionForm addVision={addVision}/>
-        {visions.map((vision, index) => (
-            
-          vision.isEditing ? (
-            <EditVisionForm editVision={editDescription} description={vision}/>
-           ) : (
-            <Vision description={vision} key={vision.id} index={index} deleteVision={deleteVision} editVision={editVision}/>
-            )))
-            
-        }
+        <table className='table table-bordered table-light text-center'>
+          <thead>
+            <tr>
+              <th>Vision ID</th>
+              <th>Vision Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {visions.map((vision, index) => (
+              
+              vision.isEditing ? (
+                <EditVisionForm editVision={editDescription} description={vision}/>
+              ) : (
+                <Vision description={vision} key={vision.id} index={index} deleteVision={deleteVision} editVision={editVision}/>
+                )))
+                
+            }
+          </tbody>
+        </table>
+        
         <button type='submit'>Next</button>
     </div>
   )

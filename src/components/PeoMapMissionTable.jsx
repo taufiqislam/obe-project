@@ -2,8 +2,8 @@ import React from 'react'
 
 export const PeoMapMissionTable = () => {
   return (
-    <div>
-        <h1 className='text-center'>Mapping of PEO and Mission</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>Mapping of PEO and Mission</h1>
         <table className='table table-bordered table-light text-center'>
             <thead>
                 <tr>

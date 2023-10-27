@@ -26,18 +26,30 @@ export const PeoWrapper = () => {
     }
     
   return (
-    <div className='PeoWrapper'>
-        <h1>Peo</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>PEO</h1>
         <PeoForm addPeo={addPeo}/>
-        {peos.map((peo, index) => (
-            
-          peo.isEditing ? (
-            <EditPeoForm editPeo={editDescription} description={peo}/>
-           ) : (
-            <Peo description={peo} key={peo.id} index={index} deletePeo={deletePeo} editPeo={editPeo}/>
-            )))
-            
-        }
+        <table className='table table-bordered table-light text-center'>
+          <thead>
+            <tr>
+              <th>PEO ID</th>
+              <th>PEO Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {peos.map((peo, index) => (
+              
+              peo.isEditing ? (
+                <EditPeoForm editPeo={editDescription} description={peo}/>
+              ) : (
+                <Peo description={peo} key={peo.id} index={index} deletePeo={deletePeo} editPeo={editPeo}/>
+                )))
+                
+            }
+          </tbody>
+        </table>
+        
         <button type='submit'>Next</button>
     </div>
   )

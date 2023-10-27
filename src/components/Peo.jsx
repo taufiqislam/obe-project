@@ -5,13 +5,17 @@ import {faTrash} from '@fortawesome/free-solid-svg-icons'
 
 export const Peo = ({description, index, deletePeo, editPeo}) => {
   return (
-    <div className='Peo'>
-        <p>{index+1}</p>
-        <p>{description.description}</p>
-        <div>
+    <>
+        <tr>
+          <td>{index+1}</td>
+          <td>{description.description}</td>
+          <td>
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => editPeo(description.id)}/>
             <FontAwesomeIcon icon={faTrash} onClick={() => deletePeo(description.id)}/>
-        </div>
-    </div>
+          </td>
+        </tr>
+        
+        
+    </>
   )
 }

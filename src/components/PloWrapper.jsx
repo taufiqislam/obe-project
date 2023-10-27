@@ -26,18 +26,30 @@ export const PloWrapper = () => {
     }
     
   return (
-    <div className='PloWrapper'>
-        <h1>Plo</h1>
+    <div className='Wrapper'>
+        <h1 className='text-center pb-5'>Plo</h1>
         <PloForm addPlo={addPlo}/>
-        {plos.map((plo, index) => (
-            
-          plo.isEditing ? (
-            <EditPloForm editPlo={editDescription} description={plo}/>
-           ) : (
-            <Plo description={plo} key={plo.id} index={index} deletePlo={deletePlo} editPlo={editPlo}/>
-            )))
-            
-        }
+        <table className='table table-bordered table-light text-center'>
+          <thead>
+            <tr>
+              <th>PLO ID</th>
+              <th>PLO Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {plos.map((plo, index) => (
+              
+              plo.isEditing ? (
+                <EditPloForm editPlo={editDescription} description={plo}/>
+              ) : (
+                <Plo description={plo} key={plo.id} index={index} deletePlo={deletePlo} editPlo={editPlo}/>
+                )))
+                
+            }
+          </tbody>
+        </table>
+        
         <button type='submit'>Next</button>
     </div>
   )
