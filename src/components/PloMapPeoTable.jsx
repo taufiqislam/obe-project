@@ -4,7 +4,7 @@ export const PloMapPeoTable = () => {
   return (
     <div className='Wrapper'>
         <h1 className='text-center pb-5'>Mapping of PLO and PEO</h1>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered table-light text-center align-middle'>
             <thead>
                 <tr>
                     <th>PLOs</th>
