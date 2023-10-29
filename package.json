@@ -1,5 +1,5 @@
 {
-  "name": "obe-app",
+  "name": "obe-backend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
