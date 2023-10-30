@@ -14,6 +14,7 @@ import MissionPeoContext from "./components/Context/MissionPeoContext";
 import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import PloPeoContext from "./components/Context/PloPeoContext";
+import CloPloRePage from "./pages/CloPloRePage";
 
 function App() {
 
@@ -85,6 +86,7 @@ function App() {
                  <Route path='/peomapmission' element={<PeoMapMissionPage/>}/>
                  <Route path='/plomappeo' element={<PloMapPeoPage/>}/>
                  <Route path='/clomapplo' element={<CloMapPloPage/>}/>
+                 <Route path='/cloPloReasoning' element={<CloPloRePage/>}/>
              </Routes>
          </PloPeoContext.Provider>
       </MissionPeoContext.Provider>
