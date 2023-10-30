@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import MissionPeoContext from "./Context/MissionPeoContext";
+import PloPeoContext from "./Context/PloPeoContext";
 
 export const PloMapPeoTable = () => {
+
+    const {peos} = useContext(MissionPeoContext);
+    const {plos} = useContext(PloPeoContext);
+
+
   return (
     <div className='Wrapper'>
         <h1 className='text-center pb-5'>Mapping of PLO and PEO</h1>
@@ -9,34 +16,27 @@ export const PloMapPeoTable = () => {
                 <tr>
                     <th>PLOs</th>
                     <th>PLO Description</th>
-                    <th>PEO1</th>
-                    <th>PEO2</th>
-                    <th>PEO3</th>
+                    {
+                        peos.map((peo,index)=>(
+                            <th>PEO{index+1}</th>
+                        ))
+                    }
                 </tr>
-                
             </thead>
             <tbody>
-                <tr>
-                    <td>PLO1</td>
-                    <td>PLO Description</td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                </tr>
-                <tr>
-                    <td>PLO2</td>
-                    <td>PLO Description</td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                </tr>
-                <tr>
-                    <td>PLO3</td>
-                    <td>PLO Description</td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                    <td><input type="number" className='form-control'/></td>
-                </tr>
+            {
+                plos.map((plo,index)=>(
+                    <tr>
+                        <td>PLO{index+1}</td>
+                        <td>{plo.description}</td>
+                        {
+                            peos.map((peo,index)=>(
+                                <td><input type="number" className='form-control'/></td>
+                            ))
+                        }
+                    </tr>
+                ))
+            }
                 <tr>
                     <td colSpan={5} className='text-center'>Level of Correlation: 3-High, 2-Medium, 1-Low</td>
                 </tr>

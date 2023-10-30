@@ -1,29 +1,14 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { PeoForm } from './PeoForm'
 import {v4 as uuidv4} from 'uuid'
 import { Peo } from './Peo'
 import { EditPeoForm } from './EditPeoForm';
+import MissionPeoContext from "./Context/MissionPeoContext";
 uuidv4()
 
 export const PeoWrapper = () => {
-    const [peos, setPeos] = useState([])
 
-    const addPeo = peo =>  {
-        setPeos([...peos, {id: uuidv4(), description: peo, completed: false, isEditing: false}])
-        console.log(peos)
-    }
-    const deletePeo = id => {
-      setPeos(peos.filter(peo => peo.id !== id))
-
-    }
-
-    const editPeo = id => {
-      setPeos(peos.map(peo => peo.id === id ? {...peo, isEditing: !peo.isEditing} : peo))
-    }
-
-    const editDescription = (description, id) => {
-      setPeos(peos.map(peo => peo.id === id ? {...peo,description, isEditing: !peo.isEditing} : peo))
-    }
+    const {peos,addPeo,deletePeo,editPeo,editDescription} = useContext(MissionPeoContext);
     
   return (
     <div className='Wrapper'>
