@@ -40,6 +40,11 @@ export const Sidebar = () => {
                           </Link>
                       </li>
                       <li class="nav-item">
+                          <Link to='/cloPloReasoning' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO & PLO reasoning</span>
+                          </Link>
+                      </li>
+                      <li class="nav-item">
                           <Link to='/courseinfo' class="nav-link align-middle px-0">
                               <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Course Info</span>
                           </Link>
