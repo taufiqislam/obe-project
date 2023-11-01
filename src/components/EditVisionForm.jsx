@@ -13,7 +13,7 @@ export const EditVisionForm = ({editVision, description}) => {
     <>
         <tr>
           <td colSpan={3}>
-          <form className='VisionForm' onSubmit={handleSubmit}>
+          <form className='ObeForm' onSubmit={handleSubmit}>
             <div className='form-group'>
                 <input type="text" className='form-input form-control' placeholder='Update Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>
             <button type='submit' className='form-btn btn'>Update</button>

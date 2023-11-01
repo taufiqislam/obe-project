@@ -1,10 +1,8 @@
 import React from 'react'
 import { Sidebar } from '../components/Sidebar'
-import { KnowledgeWrapper } from '../components/KnowldedgeWrapper'
-import { SkillWrapper } from '../components/SkillWrapper'
-import { AttitudeWrapper } from '../components/AttitudeWrapper'
+import { BookReferenceWrapper } from '../components/BookReferenceWrapper'
 
-export const IloPage = () => {
+export const BookReferencePage = () => {
   return (
     <div className='container-fluid g-0'>
       <div className='row min-vh-100'>
@@ -13,9 +11,7 @@ export const IloPage = () => {
           
         </div>
         <div className='col-sm-12 col-md-6 col-lg-10'>
-          <KnowledgeWrapper/>
-          <SkillWrapper/>
-          <AttitudeWrapper/>
+          <BookReferenceWrapper/>
         </div>
       </div>
     </div>

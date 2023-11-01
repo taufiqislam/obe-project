@@ -15,6 +15,9 @@ import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import PloPeoContext from "./components/Context/PloPeoContext";
 import CloPloRePage from "./pages/CloPloRePage";
+import { CloPage } from './pages/CloPage';
+import { BookReferencePage } from './pages/BookReferencePage';
+import { CourseObjectivePage } from './pages/CourseObjectivePage';
 
 function App() {
 
@@ -87,6 +90,9 @@ function App() {
                  <Route path='/plomappeo' element={<PloMapPeoPage/>}/>
                  <Route path='/clomapplo' element={<CloMapPloPage/>}/>
                  <Route path='/cloPloReasoning' element={<CloPloRePage/>}/>
+                 <Route path='/clo' element={<CloPage/>}/>
+                 <Route path='/bookreference' element={<BookReferencePage/>}/>
+                 <Route path='/courseobjective' element={<CourseObjectivePage/>}/>
              </Routes>
          </PloPeoContext.Provider>
       </MissionPeoContext.Provider>
