@@ -9,7 +9,7 @@ export const VisionForm = ({addVision}) => {
         setValue("")
     }
   return (
-    <form className='VisionForm' onSubmit={handleSubmit}>
+    <form className='ObeForm' onSubmit={handleSubmit}>
       <div className='form-group'>
         <label htmlFor="">Vision:</label>
         <input type="text" className='form-input form-control' placeholder='Enter Vision' value={value} onChange={(e) => setValue(e.target.value)} required/>

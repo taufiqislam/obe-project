@@ -69,6 +69,16 @@ export const Sidebar = () => {
                               <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO</span>
                           </Link>
                       </li>
+                      <li class="nav-item">
+                          <Link to='/bookreference' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Reference Books</span>
+                          </Link>
+                      </li>
+                      <li class="nav-item">
+                          <Link to='/courseobjective' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Course Objective</span>
+                          </Link>
+                      </li>
                   </ul>
               </div>
     </div>
