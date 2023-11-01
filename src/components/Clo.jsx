@@ -1,16 +1,22 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPenToSquare} from '@fortawesome/free-solid-svg-icons'
+import {faTrash} from '@fortawesome/free-solid-svg-icons'
 
-export const Clo = ({task,  toggleComplete,deleteTodo,editTodo}) => {
+export const Clo = ({description, index, cognition, deleteClo, editClo}) => {
   return (
-    <div className='Todo'>
-        <p className={`${task.completed ? "completed" : "incompleted"}`} onClick={() => toggleComplete(task.id)}>{task.task}</p>
-        <div>
-        <FontAwesomeIcon icon={faPenToSquare} onClick={() =>editTodo(task.id)}/>
-        <FontAwesomeIcon  icon={faTrash}  onClick={() => deleteTodo(task.id)}/>
-        </div>
-    </div>
+    <>
+        <tr>
+          <td>{index+1}</td>
+          <td>{description.description}</td>
+          <td>{description.cognition}</td>
+          <td>
+          <FontAwesomeIcon icon={faPenToSquare} onClick={() => editClo(description.id)}/>
+          <FontAwesomeIcon icon={faTrash} onClick={() => deleteClo(description.id)}/>
+          </td>
+        </tr>
+        
+        
+    </>
   )
 }

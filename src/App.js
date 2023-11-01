@@ -15,6 +15,7 @@ import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import PloPeoContext from "./components/Context/PloPeoContext";
 import CloPloRePage from "./pages/CloPloRePage";
+import { CloPage } from './pages/CloPage';
 
 function App() {
 
@@ -87,6 +88,7 @@ function App() {
                  <Route path='/plomappeo' element={<PloMapPeoPage/>}/>
                  <Route path='/clomapplo' element={<CloMapPloPage/>}/>
                  <Route path='/cloPloReasoning' element={<CloPloRePage/>}/>
+                 <Route path='/clo' element={<CloPage/>}/>
              </Routes>
          </PloPeoContext.Provider>
       </MissionPeoContext.Provider>
