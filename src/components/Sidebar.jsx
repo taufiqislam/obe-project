@@ -67,10 +67,42 @@ export const Sidebar = () => {
                               <span className="d-none d-sm-inline">CLO-PLO Correlation Matrix</span>
                           </Link>
                       </li>
+
                       <li className="nav-item w-100 text-center">
                           <Link to='/cloPloReasoning' className="nav-link align-middle px-0">
                               <span className="d-none d-sm-inline">CLO & PLO reasoning</span>
+
+
+                          <Link to='/addcourse' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Add Course</span>
                           </Link>
+                      </li>
+                      <li class="nav-item">
+                          <Link to='/curri' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Curriculum</span>
+                          </Link>
+                      </li>
+                      {/* <li>
+                          <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                          <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+
+                          <Link to='/clo' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO</span>
+
+                          </Link>
+
                       </li>
                       <li className="nav-item w-100 text-center">
                           <Link to='/ilo' className="nav-link align-middle px-0">
