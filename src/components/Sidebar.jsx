@@ -3,67 +3,75 @@ import {Link} from 'react-router-dom'
 
 export const Sidebar = () => {
   return (
-    <div>
-              <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
-                  <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                      <span class="fs-5 d-none d-sm-inline">Menu</span>
-                  </a>
-                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                      <li class="nav-item">
-                          <Link to='/' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-block d-sm-inline">Home</span>
+    <>
+              <div className="d-flex flex-column align-items-center px-3 pt-2 align-items-sm-start text-white">
+                  <div className='text-center'>
+                    <h4>Anup Majumder</h4>
+                    <p>Associate Professor</p>
+                    <p>Department Of Computer Science And Engineering</p>
+                  </div>
+                  
+                  <ul className="nav nav-pills flex-column  align-items-center align-items-sm-start" id="menu">
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/' className="nav-link align-middle px-0">
+                            <span className="d-block d-sm-inline">Home</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/mission' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Mission</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/mission' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Mission</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/vision' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Vision</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/vision' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Vision</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/peo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">PEO</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/peo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Program Educational Objectives (PEO)</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/plo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">PLO</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/peomapmission' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Mapping Of PEO and Mission</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/ilo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">ILO</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/plo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Program Learning Outcomes (PLO)</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/cloPloReasoning' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO & PLO reasoning</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/plomappeo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Mapping Of PLO and PEO</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/courseinfo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Course Info</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/courseinfo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Course Information</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/peomapmission' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Mapping Of PEO and Mission</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/courseobjective' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Course Objectives</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/plomappeo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Mapping Of PLO and PEO</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/clo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Course Learning Outcomes (CLO)</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/clomapplo' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO-PLO Correlation Matrix</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/clomapplo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">CLO-PLO Correlation Matrix</span>
                           </Link>
                       </li>
+
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/cloPloReasoning' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">CLO & PLO reasoning</span>
+
 
                           <Link to='/addcourse' class="nav-link align-middle px-0">
                               <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Add Course</span>
@@ -92,21 +100,29 @@ export const Sidebar = () => {
 
                           <Link to='/clo' class="nav-link align-middle px-0">
                               <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO</span>
+
                           </Link>
 
                       </li>
-                      <li class="nav-item">
-                          <Link to='/bookreference' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Reference Books</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/ilo' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Intended Learning Outcomes (ILO)</span>
                           </Link>
                       </li>
-                      <li class="nav-item">
-                          <Link to='/courseobjective' class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Course Objective</span>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/courseassessment' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Course Assessment</span>
                           </Link>
                       </li>
+                      <li className="nav-item w-100 text-center">
+                          <Link to='/bookreference' className="nav-link align-middle px-0">
+                              <span className="d-none d-sm-inline">Reference Books</span>
+                          </Link>
+                      </li>
+                      
+                      
                   </ul>
               </div>
-    </div>
+    </>
   )
 }
