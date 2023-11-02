@@ -9,7 +9,7 @@ export const PloForm = ({addPlo}) => {
         setValue("")
     }
   return (
-    <form className='PloForm' onSubmit={handleSubmit}>
+    <form className='ObeForm' onSubmit={handleSubmit}>
       <div className='form-group'>
         <label htmlFor="">PLO:</label>
         <input type="text" className='form-input form-control' placeholder='Enter Plo' value={value} onChange={(e) => setValue(e.target.value)} required/>
