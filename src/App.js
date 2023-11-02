@@ -18,6 +18,7 @@ import CloPloRePage from "./pages/CloPloRePage";
 import { CloPage } from './pages/CloPage';
 import { BookReferencePage } from './pages/BookReferencePage';
 import { CourseObjectivePage } from './pages/CourseObjectivePage';
+import { CourseAssessmentPage } from './pages/CourseAssessmentPage';
 
 function App() {
 
@@ -93,6 +94,7 @@ function App() {
                  <Route path='/clo' element={<CloPage/>}/>
                  <Route path='/bookreference' element={<BookReferencePage/>}/>
                  <Route path='/courseobjective' element={<CourseObjectivePage/>}/>
+                 <Route path='/courseassessment' element={<CourseAssessmentPage/>}/>
              </Routes>
          </PloPeoContext.Provider>
       </MissionPeoContext.Provider>

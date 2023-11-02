@@ -42,6 +42,15 @@ h1 {
   color: #fff;
 } */
 
+
+
+
+li:hover {
+  background-color: #8758ff;
+  border-radius: 3%;
+
+}
+
 span:hover {
   color: white;
 }
