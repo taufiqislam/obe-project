@@ -14,10 +14,15 @@ import MissionPeoContext from "./components/Context/MissionPeoContext";
 import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import PloPeoContext from "./components/Context/PloPeoContext";
+
+import {AddCoursePage} from './pages/AddCoursePage'
+import CurriculumPage from './pages/CurriculumPage';
+
 import CloPloRePage from "./pages/CloPloRePage";
 import { CloPage } from './pages/CloPage';
 import { BookReferencePage } from './pages/BookReferencePage';
 import { CourseObjectivePage } from './pages/CourseObjectivePage';
+
 
 function App() {
 
@@ -75,6 +80,7 @@ function App() {
 
 
   return (
+    
     <BrowserRouter>
       <MissionPeoContext.Provider value={{peos,addPeo,deletePeo,editPeo,editDescription,missions,addMission,deleteMission,editMission,editDescriptionMission}}>
          <PloPeoContext.Provider value={{plos,deletePlo,editPlo,editDescriptionPlo,addPlo}}>
@@ -89,10 +95,15 @@ function App() {
                  <Route path='/peomapmission' element={<PeoMapMissionPage/>}/>
                  <Route path='/plomappeo' element={<PloMapPeoPage/>}/>
                  <Route path='/clomapplo' element={<CloMapPloPage/>}/>
+
+                 <Route path='/addcourse'  element={<AddCoursePage/>}/>
+                 <Route path='/curri'  element={<CurriculumPage/>}/>
+
                  <Route path='/cloPloReasoning' element={<CloPloRePage/>}/>
                  <Route path='/clo' element={<CloPage/>}/>
                  <Route path='/bookreference' element={<BookReferencePage/>}/>
                  <Route path='/courseobjective' element={<CourseObjectivePage/>}/>
+
              </Routes>
          </PloPeoContext.Provider>
       </MissionPeoContext.Provider>
