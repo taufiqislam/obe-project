@@ -59,6 +59,16 @@ export const Sidebar = () => {
                               <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">CLO-PLO Correlation Matrix</span>
                           </Link>
                       </li>
+                      <li class="nav-item">
+                          <Link to='/addcourse' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Add Course</span>
+                          </Link>
+                      </li>
+                      <li class="nav-item">
+                          <Link to='/curri' class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="d-none d-sm-inline">Curriculum</span>
+                          </Link>
+                      </li>
                       {/* <li>
                           <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                               <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
