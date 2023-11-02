@@ -16,16 +16,36 @@ body {
   background-color: #deeaee;
 }
 
+img {
+  width: 100px;
+  height: 100px;
+}
 
-
-h1 {
-  margin-bottom: 0.5rem;
+.Heading1 {
   border-bottom-style: solid;
   border-bottom-color: cornflowerblue;
-  font-size: 1.75rem;
+  text-align: left;
+  padding-top: 1.8rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.Heading2 {
+  border-bottom-style: solid;
+  border-bottom-color: cornflowerblue;
   text-align: center;
-  padding-bottom: 2rem;
-  margin-bottom: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.Heading3 {
+  text-align: right;
+  border-bottom-style: solid;
+  border-bottom-color: cornflowerblue;
+  margin-bottom: 3rem;
 }
 
 
@@ -70,6 +90,7 @@ tbody {
 }
 
 .Sidetext {
+  padding-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid black;
   background-color: cornflowerblue;
@@ -121,8 +142,6 @@ span {
 .form-btn {
   background: cornflowerblue;
   color: #fff;
-  border: none;
-  padding: 0.55rem;
   cursor: pointer;
 }
 

@@ -1,9 +1,24 @@
 import React from 'react'
+import logo from './logos/JU_logo2.png';
+import {Link} from 'react-router-dom'
 
 const CourseAssessmentTable = () => {
   return (
     <div className='Wrapper text-center' id='courseassessment'>
-        <h1>Course Assessment</h1>
+          <div className='row'>
+               <div className='col-4 Heading1'>
+                    <p>Curriculum: (2019-2020) - (2023-2024)</p>
+                    <p>Program: 3rd Year 1st Semester 2019-2020</p>
+                    <p>Course: CSE-356</p>
+               </div>
+               <div className='col-4 Heading2'>
+                    <h2>Course Assessment</h2>
+               </div>
+               <div className='col-4 Heading3'>
+                    <img src={logo} alt="Logo" />
+               </div>
+          </div>
+        
        <table className='table table-bordered text-center table-hover border-dark'>
             <thead>
                 <tr>
@@ -79,7 +94,21 @@ const CourseAssessmentTable = () => {
             
             </tbody>
         </table>
-        <button type="button" class="btn btn-success">Save</button>
+        <button type='button' className='btn btn-success mb-5'>Save</button>
+        <div className='row'>
+            <div className='col-6 text-start'>
+              <Link to='/ilo'>
+                <button type='submit' className='btn btn-warning'>Back</button>
+              </Link>
+              
+            </div>
+            <div className='col-6 text-end'>
+              <Link to='/bookreference'>
+                <button type='submit' className='form-btn btn'>Next</button>
+              </Link>
+              
+            </div>
+        </div>
     </div>
   )
 }

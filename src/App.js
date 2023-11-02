@@ -106,7 +106,8 @@ function App() {
                  <Route path='/courseobjective' element={<CourseObjectivePage/>}/>
 
                  <Route path='/courseassessment' element={<CourseAssessmentPage/>}/>
-
+                 <Route path='/curriculum' element={<CurriculumPage/>}/>
+                 <Route path='/addcourse' element={<AddCoursePage/>}/>
 
              </Routes>
          </PloPeoContext.Provider>

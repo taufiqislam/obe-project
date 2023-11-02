@@ -7,7 +7,7 @@ export const Knowledge = ({description, index, deleteKnowledge, editKnowledge}) 
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>a{index+1}</td>
           <td>{description.description}</td>
           <td>
           <FontAwesomeIcon icon={faPenToSquare} onClick={() => editKnowledge(description.id)}/>

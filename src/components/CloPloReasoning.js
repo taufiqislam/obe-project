@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Button, Col, Container, Row, Table } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 function CloPloReasoning(props) {
     const [data, setData] = useState({

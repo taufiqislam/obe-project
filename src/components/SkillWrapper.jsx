@@ -28,7 +28,6 @@ export const SkillWrapper = () => {
     
   return (
     <div className='Wrapper'>
-        <h1>Skill</h1>
         <SkillForm addSkill={addSkill}/>
         <table className='table table-bordered text-center table-hover border-dark'>
           <thead>
@@ -50,8 +49,6 @@ export const SkillWrapper = () => {
             }
           </tbody>
         </table>
-        
-        <button type='submit'>Next</button>
     </div>
   )
 }

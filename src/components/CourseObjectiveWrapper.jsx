@@ -3,6 +3,8 @@ import { CourseObjectiveForm } from './CourseObjectiveForm'
 import {v4 as uuidv4} from 'uuid'
 import { CourseObjective } from './CourseObjective'
 import { EditCourseObjectiveForm } from './EditCourseObjectiveForm';
+import logo from './logos/JU_logo2.png';
+import {Link} from 'react-router-dom'
 uuidv4()
 
 export const CourseObjectiveWrapper = () => {
@@ -28,7 +30,20 @@ export const CourseObjectiveWrapper = () => {
     
   return (
     <div className='Wrapper' id='courseobjective'>
-        <h1>Course Objectives(CO)</h1>
+      <div className='row'>
+          <div className='col-4 Heading1'>
+            <p>Curriculum: (2019-2020) - (2023-2024)</p>
+            <p>Program: 3rd Year 1st Semester 2019-2020</p>
+            <p>Course: CSE-356</p>
+          </div>
+          <div className='col-4 Heading2'>
+           <h2>Course Objectives(CO)</h2>
+          </div>
+          <div className='col-4 Heading3'>
+            <img src={logo} alt="Logo" />
+          </div>
+        </div>
+        
         <CourseObjectiveForm addCourseObjective={addCourseObjective}/>
         <table className='table table-bordered table-hover border-dark text-center'>
           <thead>
@@ -51,7 +66,20 @@ export const CourseObjectiveWrapper = () => {
           </tbody>
         </table>
         
-        <button type='submit'>Next</button>
+        <div className='row'>
+            <div className='col-6 text-start'>
+              <Link to='/courseinfo'>
+                <button type='submit' className='btn btn-warning'>Back</button>
+              </Link>
+              
+            </div>
+            <div className='col-6 text-end'>
+              <Link to='/clo'>
+                <button type='submit' className='form-btn btn'>Next</button>
+              </Link>
+              
+            </div>
+        </div>
     </div>
   )
 }

@@ -28,7 +28,6 @@ export const KnowledgeWrapper = () => {
     
   return (
     <div className='Wrapper'>
-        <h1>Knowledge</h1>
         <KnowledgeForm addKnowledge={addKnowledge}/>
         <table className='table table-bordered table-hover border-dark text-center'>
           <thead>
@@ -50,8 +49,6 @@ export const KnowledgeWrapper = () => {
             }
           </tbody>
         </table>
-        
-        <button type='submit'>Next</button>
     </div>
   )
 }

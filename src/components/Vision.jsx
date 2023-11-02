@@ -7,7 +7,7 @@ export const Vision = ({description, index, deleteVision, editVision}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>V{index+1}</td>
           <td>{description.description}</td>
           <td>
             <div>

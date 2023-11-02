@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 export const CourseInfoForm = ({addMission}) => {
   const [courseCode, setCourseCode] = useState("")
@@ -74,10 +75,24 @@ export const CourseInfoForm = ({addMission}) => {
             <textarea class="form-input form-control" rows="3" value={rationale} onChange={(e) => setRationale(e.target.value)} required></textarea>
           </div>
           <div className='form-group'>
-            <button type='button' className='form-btn btn'>Save</button>
+            <button type='button' className='btn btn-success mb-5'>Save</button>
           </div>
-          
+          <div className='row'>
+            <div className='col-6 text-start'>
+              <Link to='/addcourse'>
+                <button type='button' className='btn btn-warning'>Back</button>
+              </Link>
+              
+            </div>
+            <div className='col-6 text-end'>
+              <Link to='/courseobjective'>
+                <button type='button' className='form-btn btn'>Next</button>
+              </Link>
+              
+            </div>
+        </div>
         </form>
+
         
     </div>
   )

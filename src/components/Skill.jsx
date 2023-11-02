@@ -7,7 +7,7 @@ export const Skill = ({description, index, deleteSkill, editSkill}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>b{index+1}</td>
           <td>{description.description}</td>
           <td>
           <FontAwesomeIcon icon={faPenToSquare} onClick={() => editSkill(description.id)}/>

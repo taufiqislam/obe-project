@@ -7,7 +7,7 @@ export const Attitude = ({description, index, deleteAttitude, editAttitude}) => 
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>c{index+1}</td>
           <td>{description.description}</td>
           <td>
           <FontAwesomeIcon icon={faPenToSquare} onClick={() => editAttitude(description.id)}/>

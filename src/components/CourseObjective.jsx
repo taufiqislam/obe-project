@@ -7,7 +7,7 @@ export const CourseObjective = ({description, index, deleteCourseObjective, edit
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>CO{index+1}</td>
           <td>{description.description}</td>
           <td>
           <FontAwesomeIcon icon={faPenToSquare} onClick={() => editCourseObjective(description.id)}/>

@@ -7,7 +7,7 @@ export const Peo = ({description, index, deletePeo, editPeo}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>PEO{index+1}</td>
           <td>{description.description}</td>
           <td>
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => editPeo(description.id)}/>

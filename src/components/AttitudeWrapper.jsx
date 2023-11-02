@@ -28,7 +28,6 @@ export const AttitudeWrapper = () => {
     
   return (
     <div className='Wrapper'>
-        <h1>Attitude</h1>
         <AttitudeForm addAttitude={addAttitude}/>
         <table className='table table-bordered text-center table-hover border-dark'>
           <thead>
@@ -50,8 +49,6 @@ export const AttitudeWrapper = () => {
             }
           </tbody>
         </table>
-        
-        <button type='submit'>Next</button>
     </div>
   )
 }
