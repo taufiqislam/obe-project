@@ -11,10 +11,10 @@ export const PloWrapper = () => {
     const {plos,deletePlo,editPlo,editDescriptionPlo,addPlo} = useContext(PloPeoContext);
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Plo</h1>
+    <div className='Wrapper' id='plo'>
+        <h1>Plo</h1>
         <PloForm addPlo={addPlo}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered text-center table-hover border-dark table-hover'>
           <thead>
             <tr>
               <th>PLO ID</th>

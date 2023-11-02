@@ -9,9 +9,9 @@ export const PloMapPeoTable = () => {
 
 
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Mapping of PLO and PEO</h1>
-        <table className='table table-bordered table-hover table-light text-center align-middle'>
+    <div className='Wrapper' id='plomappeo'>
+        <h1>Mapping of PLO and PEO</h1>
+        <table className='table table-bordered table-hover text-center border-dark align-middle'>
             <thead>
                 <tr>
                     <th>PLOs</th>

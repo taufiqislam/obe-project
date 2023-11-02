@@ -27,10 +27,10 @@ export const CourseObjectiveWrapper = () => {
     }
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Course Objectives(CO)</h1>
+    <div className='Wrapper' id='courseobjective'>
+        <h1>Course Objectives(CO)</h1>
         <CourseObjectiveForm addCourseObjective={addCourseObjective}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered table-hover border-dark text-center'>
           <thead>
             <tr>
               <th>CO ID</th>

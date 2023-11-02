@@ -22,10 +22,10 @@ export const BookReferenceWrapper = () => {
     }
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>BookReference</h1>
+    <div className='Wrapper' id='bookreference'>
+        <h1>BookReference</h1>
         <BookReferenceForm addBookReference={addBookReference}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered text-center table-hover border-dark'>
           <thead>
             <tr>
               <th>ID</th>

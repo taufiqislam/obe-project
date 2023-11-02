@@ -13,9 +13,9 @@ useEffect(()=>{
 
 
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Mapping of PEO and Mission</h1>
-        <table className='table table-bordered table-light text-center align-middle'>
+    <div className='Wrapper' id='peomapmission'>
+        <h1>Mapping of PEO and Mission</h1>
+        <table className='table table-bordered table-hover border-dark text-center align-middle'>
             <thead>
                 <tr>
                     <th>PEOs</th>

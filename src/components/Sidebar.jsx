@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 export const Sidebar = () => {
   return (
     <>
-              <div className="d-flex flex-column align-items-center px-3 pt-2 align-items-sm-start text-white">
-                  <div className='text-center'>
+              <div className="d-flex flex-column align-items-center align-items-sm-start ">
+                  <div className='text-center Sidetext'>
                     <h4>Anup Majumder</h4>
                     <p>Associate Professor</p>
                     <p>Department Of Computer Science And Engineering</p>

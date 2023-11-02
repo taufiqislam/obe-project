@@ -2,9 +2,9 @@ import React from 'react'
 
 const CourseAssessmentTable = () => {
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Course Assessment</h1>
-       <table className='table table-bordered table-light text-center'>
+    <div className='Wrapper text-center' id='courseassessment'>
+        <h1>Course Assessment</h1>
+       <table className='table table-bordered text-center table-hover border-dark'>
             <thead>
                 <tr>
                     <th rowSpan={2}>Blooms Category</th>
@@ -79,7 +79,7 @@ const CourseAssessmentTable = () => {
             
             </tbody>
         </table>
-        <button type="button" class="btn btn-warning">Save</button>
+        <button type="button" class="btn btn-success">Save</button>
     </div>
   )
 }

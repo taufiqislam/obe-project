@@ -11,10 +11,10 @@ export const PeoWrapper = () => {
     const {peos,addPeo,deletePeo,editPeo,editDescription} = useContext(MissionPeoContext);
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>PEO</h1>
+    <div className='Wrapper' id='peo'>
+        <h1>PEO</h1>
         <PeoForm addPeo={addPeo}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered table-hover text-center border-dark'>
           <thead>
             <tr>
               <th>PEO ID</th>

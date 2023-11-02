@@ -3,8 +3,8 @@ import { CourseInfoForm } from './CourseInfoForm'
 
 export const CourseInfoWrapper = () => {
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center'>Course Information</h1>
+    <div className='Wrapper' id='courseinfo'>
+        <h1>Course Information</h1>
         <CourseInfoForm/>
     </div>
   )

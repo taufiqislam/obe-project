@@ -26,10 +26,10 @@ export const VisionWrapper = () => {
     }
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Vision</h1>
+    <div className='Wrapper' id='vision'>
+        <h1>Vision</h1>
         <VisionForm addVision={addVision}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered text-center border-dark'>
           <thead>
             <tr>
               <th>Vision ID</th>

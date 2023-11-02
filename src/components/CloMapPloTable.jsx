@@ -2,9 +2,9 @@ import React from 'react'
 
 export const CloMapPloTable = () => {
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>CLO-PLO Correlation Matrix</h1>
-        <table className='table table-bordered table-light text-center align-middle'>
+    <div className='Wrapper' id='clomapplo'>
+        <h1>CLO-PLO Correlation Matrix</h1>
+        <table className='table table-bordered text-center align-middle table-hover border-dark'>
             <thead>
                 <tr>
                     <th colSpan={2}>1st Year 1st Semester</th>

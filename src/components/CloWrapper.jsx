@@ -23,10 +23,10 @@ export const CloWrapper = () => {
     // const {clos,addClo,deleteClo,editClo,editDescriptionClo} = useContext(MissionCloContext);
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Clo</h1>
+    <div className='Wrapper' id='clo'>
+        <h1>CLO</h1>
         <CloForm addClo={addClo}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered text-center table-hover border-dark'>
           <thead>
             <tr>
               <th>CLO ID</th>

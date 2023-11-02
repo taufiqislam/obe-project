@@ -11,7 +11,7 @@ function CloPloReasoning(props) {
     const dataArray = Object.entries(data);
 
     return (
-        <Fragment>
+        <div className="Wrapper" id='cloploreasoning'>
             <Container fluid className="mt-5 p-0">
                 <Row>
                     <Col>
@@ -50,7 +50,7 @@ function CloPloReasoning(props) {
                     </Col>
                 </Row>
             </Container>
-        </Fragment>
+        </div>
     );
 }
 

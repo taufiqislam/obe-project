@@ -1,21 +1,19 @@
 import React from 'react'
 import { Sidebar } from '../components/Sidebar'
-import { KnowledgeWrapper } from '../components/KnowldedgeWrapper'
-import { SkillWrapper } from '../components/SkillWrapper'
-import { AttitudeWrapper } from '../components/AttitudeWrapper'
+import { IloWrapper } from '../components/IloWrapper'
 
 export const IloPage = () => {
   return (
-    <div className='container-fluid g-0'>
+    <div className='container-fluid g-0 Page'>
       <div className='row min-vh-100'>
-        <div className='col-sm-12 col-md-6 col-lg-2 sidenavbar'>
+        <div className='col-sm-12 col-md-6 col-lg-2'>
+        </div>
+        <div className='col-sm-12 col-md-6 col-lg-2 sidenavbar fixed-top'>
           <Sidebar/>
           
         </div>
         <div className='col-sm-12 col-md-6 col-lg-10'>
-          <KnowledgeWrapper/>
-          <SkillWrapper/>
-          <AttitudeWrapper/>
+           <IloWrapper/>
         </div>
       </div>
     </div>
