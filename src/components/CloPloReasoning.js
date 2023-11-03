@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Button, Col, Container, Row, Table } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 function CloPloReasoning(props) {
     const [data, setData] = useState({
@@ -11,7 +12,7 @@ function CloPloReasoning(props) {
     const dataArray = Object.entries(data);
 
     return (
-        <Fragment>
+        <div className="Wrapper" id='cloploreasoning'>
             <Container fluid className="mt-5 p-0">
                 <Row>
                     <Col>
@@ -50,7 +51,7 @@ function CloPloReasoning(props) {
                     </Col>
                 </Row>
             </Container>
-        </Fragment>
+        </div>
     );
 }
 

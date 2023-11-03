@@ -7,7 +7,7 @@ export const Clo = ({description, index, deleteClo, editClo}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>CLO{index+1}</td>
           <td>{description.description}</td>
           <td>{description.cognition}</td>
           <td>

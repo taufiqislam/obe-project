@@ -7,7 +7,7 @@ export const Mission = ({description, index, deleteMission, editMission}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>M{index+1}</td>
           <td>{description.description}</td>
           <td>
           <FontAwesomeIcon icon={faPenToSquare} onClick={() => editMission(description.id)}/>

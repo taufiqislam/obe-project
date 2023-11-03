@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Addcourse() {
     let [array,setArray]=useState([])
@@ -87,6 +88,20 @@ array && array.map(
 
                 </tbody>
             </table>
+            <div className='row'>
+            <div className='col-6 text-start'>
+              <Link to='/plomappeo'>
+                <button type='submit' className='btn btn-warning'>Back</button>
+              </Link>
+              
+            </div>
+            <div className='col-6 text-end'>
+              <Link to='/courseinfo'>
+                <button type='submit' className='form-btn btn'>Next</button>
+              </Link>
+              
+            </div>
+        </div>
 
     </div>
   )

@@ -3,6 +3,8 @@ import { VisionForm } from './VisionForm'
 import {v4 as uuidv4} from 'uuid'
 import { Vision } from './Vision'
 import { EditVisionForm } from './EditVisionForm';
+import logo from './logos/JU_logo2.png';
+import {Link} from 'react-router-dom'
 uuidv4()
 
 export const VisionWrapper = () => {
@@ -26,10 +28,20 @@ export const VisionWrapper = () => {
     }
     
   return (
-    <div className='Wrapper'>
-        <h1 className='text-center pb-5'>Vision</h1>
+    <div className='Wrapper' id='vision'>
+        <div className='row'>
+          <div className='col-4 Heading1'>
+
+          </div>
+          <div className='col-4 Heading2'>
+            <h2 >Vision</h2>
+          </div>
+          <div className='col-4 Heading3'>
+            <img src={logo} alt="Logo" />
+          </div>
+        </div>
         <VisionForm addVision={addVision}/>
-        <table className='table table-bordered table-light text-center'>
+        <table className='table table-bordered text-center border-dark'>
           <thead>
             <tr>
               <th>Vision ID</th>
@@ -49,8 +61,21 @@ export const VisionWrapper = () => {
             }
           </tbody>
         </table>
+        <div className='row'>
+            <div className='col-6 text-start'>
+              <Link to='/mission'>
+                <button type='submit' className='btn btn-warning'>Back</button>
+              </Link>
+              
+            </div>
+            <div className='col-6 text-end'>
+              <Link to='/curriculum'>
+                <button type='submit' className='form-btn btn'>Next</button>
+              </Link>
+              
+            </div>
+        </div>
         
-        <button type='submit'>Next</button>
     </div>
   )
 }

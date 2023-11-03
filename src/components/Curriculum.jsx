@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
+import logo from './logos/JU_logo2.png';
+import {Link} from 'react-router-dom'
 
 export default function Curriculum() {
     let [array,setArray]=useState([])
@@ -45,53 +47,90 @@ function updateinfo(){
      setInputdata({starting:"",ending:""})
 }
   return (
-    <div>
-            <h1><label for="dropdown">Starting Session:</label></h1>
-    <Form.Select id="dropdown"  value={inputdata.starting || ""} name="starting" autoComplete='off' placeholder='Enter Name' onChange={data}>
-      <option>Open this select menu</option>
-      <option value="2018-2019">2018-2019</option>
-      <option value="2019-2020">2019-2020</option>
-      <option value="2020-2021">2020-2021</option>
-      <option value="2021-2022">2021-2022</option>
-      </Form.Select>
+    <div className='container Wrapper'>
+        <div className='row'>
+          <div className='col-4 Heading1'>
+
+          </div>
+          <div className='col-4 Heading2'>
+            <h2 >Curriculum</h2>
+          </div>
+          <div className='col-4 Heading3'>
+            <img src={logo} alt="Logo" />
+          </div>
+        </div>
+        <form className='ObeForm'>
+            <div className='row'>
+                <div className='col-5'>
+                    <label for="dropdown">Starting Session:</label>
+                    <Form.Select id="dropdown"  value={inputdata.starting || ""} name="starting" autoComplete='off' placeholder='Enter Name' onChange={data}>
+                    <option>Open this select menu</option>
+                    <option value="2018-2019">2018-2019</option>
+                    <option value="2019-2020">2019-2020</option>
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                    </Form.Select>
+                </div>
+                <div className='col-5'>
+                    <label for="dropdown">Ending Session:</label>
+                    <Form.Select id="dropdown" value={inputdata.ending || ""} name="ending" autoComplete='off' placeholder='Enter Name' onChange={data}>
+                    <option>Open this select menu</option>
+                    <option value="2018-2019">2018-2019</option>
+                    <option value="2019-2020">2019-2020</option>
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                    </Form.Select>
+                </div>
+                <div className='col-2'>
+                    <button className='form-btn btn' onClick={!bolin?addinputdata:updateinfo}>{!bolin?`Add data`:`Update data`}</button>
+                </div>
+            </div>
+        </form>
+        
+        
             
-      <h1><label for="dropdown">Ending Session:</label></h1>
-    <Form.Select id="dropdown" value={inputdata.ending || ""} name="ending" autoComplete='off' placeholder='Enter Name' onChange={data}>
-    <option>Open this select menu</option>
-      <option value="2018-2019">2018-2019</option>
-      <option value="2019-2020">2019-2020</option>
-      <option value="2020-2021">2020-2021</option>
-      <option value="2021-2022">2021-2022</option>
-      </Form.Select>
-            <button onClick={!bolin?addinputdata:updateinfo}>{!bolin?`Add data`:`Update data`}</button>
 
-            <br />
-
-            <table className='hover table table-bordered table-light text-center'  border="1" >
-                <tbody>
+            <table className='table table-bordered text-center table-hover bg-dark' >
+                <thead>
                     <tr>
                         <th>Starting Session</th>
                         <th>Ending Session</th>
                         <th>Delete</th>
                     </tr>
+                </thead>
+                <tbody>
+                    
                 {
 
-array && array.map(
-(item,i)=>{
-    return(
-        <tr key={i}>
-            <td>{item.starting}</td>
-            <td>{item.ending}</td>
-            <td><button onClick={()=>deletedata(i)}>Delete</button></td>
-        </tr>
-    )
-}
-)
-   }
+                    array && array.map(
+                    (item,i)=>{
+                        return(
+                            <tr key={i}>
+                                <td>{item.starting}</td>
+                                <td>{item.ending}</td>
+                                <td><button onClick={()=>deletedata(i)}>Delete</button></td>
+                            </tr>
+                        )
+                    }
+                    )
+                }
 
                 </tbody>
             </table>
-
+            <div className='row'>
+                <div className='col-6 text-start'>
+                <Link to='/vision'>
+                    <button type='submit' className='btn btn-warning'>Back</button>
+                </Link>
+                
+                </div>
+                <div className='col-6 text-end'>
+                <Link to='/peo'>
+                    <button type='submit' className='form-btn btn'>Next</button>
+                </Link>
+                
+                </div>
+            </div>
     </div>
   )
 }

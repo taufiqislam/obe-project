@@ -7,7 +7,7 @@ export const Plo = ({description, index, deletePlo, editPlo}) => {
   return (
     <>
         <tr>
-          <td>{index+1}</td>
+          <td>PLO{index+1}</td>
           <td>{description.description}</td>
           <td>
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => editPlo(description.id)}/>
