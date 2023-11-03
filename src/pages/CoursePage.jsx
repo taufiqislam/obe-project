@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Sidebar } from '../components/Sidebar'
-import Addcourse from '../components/Addcourse'
+import { Course } from '../components/Course'
 
 
 export const AddCoursePage = () => {
@@ -13,7 +13,7 @@ export const AddCoursePage = () => {
           
         </div>
         <div className='col-sm-12 col-md-6 col-lg-10'>
-          <Addcourse/>
+          <Course/>
         </div>
       </div>
     </div>

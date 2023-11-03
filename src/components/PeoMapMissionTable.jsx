@@ -58,7 +58,7 @@ useEffect(()=>{
                 ))
             }
                 <tr>
-                    <td colSpan={5} className='text-center'>Level of Correlation: 3-High, 2-Medium, 1-Low</td>
+                    <td colSpan={missions.length+2} className='text-center'>Level of Correlation: 3-High, 2-Medium, 1-Low</td>
                 </tr>
             </tbody>
         </table>

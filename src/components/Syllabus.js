@@ -4,6 +4,8 @@ import Form from "react-bootstrap/Form";
 import BscSemester from "./BSCSemester";
 import BscYear from "./BSCYear";
 import SyllabusTable from "./SyllabusTable";
+import logo from './logos/JU_logo2.png';
+import {Link} from 'react-router-dom'
 
 function Syllabus(props) {
 
@@ -41,47 +43,64 @@ function Syllabus(props) {
     return (
         <Fragment>
             <Container>
+                <div className='row'>
+                <div className='col-4 Heading1'>
+                    <p>Curriculum: (2019-2020) - (2023-2024)</p>
+                </div>
+                <div className='col-4 Heading2'>
+                    <h2>Syllabus</h2>
+                </div>
+                <div className='col-4 Heading3'>
+                    <img src={logo} alt="Logo" />
+                </div>
+                </div>
                 <Row>
                     <Col>
                         <div>
-                            Program <input
+                            <label className='pe-5 pb-2'>Program:</label>
+                             <input
                             name="pg"
                             id="pg1"
+                            className='form-check-input'
                             type="radio"
                             value="bsc"
                             onChange={programHandle}
                             checked={program==="bsc"}
                             />
-                            <label htmlFor="pg1">B.S.C</label>
+                            <label htmlFor="pg1" className='pe-5 pb-2'>B.S.C</label>
                             <input
                                 name="pg"
                                 id="pg2"
+                                className='form-check-input'
                                 type="radio"
-                                value="bsc"
+                                value="msc"
                                 onChange={programHandle}
                                 checked={program==="msc"}
                             />
-                            <label htmlFor="pg2">M.S.C</label>
+                            <label htmlFor="pg2" className='pe-5 pb-2'>M.S.C</label>
                         </div>
                         <div>
-                            System <input
+                            <label className='pe-5 pb-2'>System:</label> 
+                            <input
                             name="sys"
                             id="sys1"
+                            className='form-check-input'
                             type="radio"
                             value="semester"
                             onChange={handleChange}
                             checked={selectedOption==="semester"}
                             />
-                            <label htmlFor="sys1">Semester</label>
+                            <label htmlFor="sys1" className='pe-5 pb-2'>Semester</label>
                             <input
                                 name="sys"
                                 id="sys2"
+                                className='form-check-input'
                                 type="radio"
                                 value="year"
                                 onChange={handleChange}
                                 checked={selectedOption==="year"}
                             />
-                            <label htmlFor="sys2">Year</label>
+                            <label htmlFor="sys2" className='pe-5 pb-2'>Year</label>
                         </div>
                         <div>
                             <label htmlFor="">Starting Session</label>

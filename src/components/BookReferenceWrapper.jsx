@@ -4,7 +4,7 @@ import {v4 as uuidv4} from 'uuid'
 import { EditBookReferenceForm } from './EditBookReferenceForm';
 import logo from './logos/JU_logo2.png';
 import {Link} from 'react-router-dom'
-import {BookReference} from "./Bookreference";
+import {BookReference} from "./BookReference";
 uuidv4()
 
 export const BookReferenceWrapper = () => {

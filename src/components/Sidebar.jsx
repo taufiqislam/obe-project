@@ -38,6 +38,11 @@ export const Sidebar = () => {
                           </Link>
                       </li>
                       <li className="nav-item w-100 text-center">
+                          <Link to='/syllabus' class="nav-link align-middle px-0">
+                            <span className="d-none d-sm-inline">Syllabus</span>
+                          </Link>
+                      </li>
+                      <li className="nav-item w-100 text-center">
                           <Link to='/peo' className="nav-link align-middle px-0">
                               <span className="d-none d-sm-inline">Program Educational Objectives (PEO)</span>
                           </Link>
