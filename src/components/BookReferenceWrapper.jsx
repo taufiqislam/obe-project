@@ -1,10 +1,10 @@
 import React, {useContext, useState} from 'react'
 import { BookReferenceForm } from './BookReferenceForm'
 import {v4 as uuidv4} from 'uuid'
-import { BookReference } from './BookReference'
 import { EditBookReferenceForm } from './EditBookReferenceForm';
 import logo from './logos/JU_logo2.png';
 import {Link} from 'react-router-dom'
+import {BookReference} from "./Bookreference";
 uuidv4()
 
 export const BookReferenceWrapper = () => {

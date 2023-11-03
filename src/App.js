@@ -23,6 +23,7 @@ import { CloPage } from './pages/CloPage';
 import { BookReferencePage } from './pages/BookReferencePage';
 import { CourseObjectivePage } from './pages/CourseObjectivePage';
 import { CourseAssessmentPage } from './pages/CourseAssessmentPage';
+import SyllabusPage from "./pages/SyllabusPage";
 
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
                  <Route path='/' element={<Home/>}/>
                  <Route path='/mission' element={<MissionPage/>}/>
                  <Route path='/vision' element={<VisionPage/>}/>
+                 <Route path='/syllabus' element={<SyllabusPage/>}/>
                  <Route path='/peo' element={<PeoPage/>}/>
                  <Route path='/plo' element={<PloPage/>}/>
                  <Route path='/ilo' element={<IloPage/>}/>
