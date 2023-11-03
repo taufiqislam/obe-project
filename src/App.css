@@ -175,4 +175,7 @@ span {
 .delete-icon {
   cursor: pointer;
 }
- 
+.customBtn{
+  width: 55px !important;
+  margin: 10px 0 0 37px !important;
+}
