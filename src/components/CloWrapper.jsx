@@ -56,7 +56,7 @@ export const CloWrapper = () => {
                 <EditCloForm editClo={editDescriptionClo} description={clo}/>
               ) : (
                 <Clo description={clo} key={clo.id} index={index} deleteClo={deleteClo} editClo={editClo}/>
-                )))
+                ))) 
                 
             }
           </tbody>
